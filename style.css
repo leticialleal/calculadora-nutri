@@ -1,0 +1,26 @@
+.titulo .remover {
+    display: none;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form .radio {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .remover {
+    display: none;
+  }
+  
+  .btn-calc-nov {
+    display: none;
+  }
+  
+  .aparecer {
+    display: block;
+  }

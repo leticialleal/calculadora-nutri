@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="voltar">Calculadora</h1>
+  <form onsubmit="calcular(event)">
+    <div class="form">
+      <input type="text" placeholder="Nome" name="nome" >
+      <input type="number" placeholder="Idade" name="idade" >
+      <input type="number" placeholder="Peso em kg" name="peso" >
+      <input type="number" placeholder="Altura em cm" name="altura" >
+      <div>
+        <strong>Sexo</strong>
+        <div>
+          <input type="radio" name="sexo" value="feminino" >
+          <label for="feminino">Feminino</label>
+        </div>
+        <div>
+          <input type="radio" name="sexo" value="masculino" >
+          <label for="masculino">Masculino</label>
+        </div>
+      </div>
+      
+      <div>
+        <strong>Intensidade da rotina</strong>
+        <div>
+          <input type="radio" name="atividade" value="baixa" >
+          <label for="baixa">Baixa</label>
+        </div>
+        <div>
+          <input type="radio" name="atividade" value="media" >
+          <label for="media">Média</label>
+        </div>
+        <div>
+          <input type="radio" name="atividade" value="intensa" >
+          <label for="intensa">Intensa</label>
+        </div>
+      </div>
+
+      <div>
+        <strong>Objetivo</strong>
+        <div>
+          <input type="radio" name="objetivo" value="emagrecer" >
+          <label for="emagrecer">Emagrecer</label>
+        </div>
+        <div>
+          <input type="radio" name="objetivo" value="hipertrofia" >
+          <label for="hipertrofia">Hipertrofia</label>
+        </div>
+      </div>
+
+      <button>CALCULAR</button>
+    </div>
+  </form>
+  
+  <div class="results"></div>
+  <button class="btn-calc-nov">Calcular novamente</button>
+  <script src="index.js"></script>
+</body>
+</html>
