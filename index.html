@@ -10,18 +10,18 @@
   <h1 class="voltar">Calculadora</h1>
   <form onsubmit="calcular(event)">
     <div class="form">
-      <input type="text" placeholder="Nome" name="nome" >
-      <input type="number" placeholder="Idade" name="idade" >
-      <input type="number" placeholder="Peso em kg" name="peso" >
-      <input type="number" placeholder="Altura em cm" name="altura" >
+      <input type="text" placeholder="Nome" name="nome" required>
+      <input type="number" placeholder="Idade" name="idade" required>
+      <input type="number" placeholder="Peso em kg" name="peso" required>
+      <input type="number" placeholder="Altura em cm" name="altura" required>
       <div>
         <strong>Sexo</strong>
         <div>
-          <input type="radio" name="sexo" value="feminino" >
+          <input type="radio" name="sexo" value="feminino" required>
           <label for="feminino">Feminino</label>
         </div>
         <div>
-          <input type="radio" name="sexo" value="masculino" >
+          <input type="radio" name="sexo" value="masculino" required>
           <label for="masculino">Masculino</label>
         </div>
       </div>
@@ -29,15 +29,15 @@
       <div>
         <strong>Intensidade da rotina</strong>
         <div>
-          <input type="radio" name="atividade" value="baixa" >
+          <input type="radio" name="atividade" value="baixa" required>
           <label for="baixa">Baixa</label>
         </div>
         <div>
-          <input type="radio" name="atividade" value="media" >
+          <input type="radio" name="atividade" value="media" required>
           <label for="media">Média</label>
         </div>
         <div>
-          <input type="radio" name="atividade" value="intensa" >
+          <input type="radio" name="atividade" value="intensa" required>
           <label for="intensa">Intensa</label>
         </div>
       </div>
@@ -45,11 +45,11 @@
       <div>
         <strong>Objetivo</strong>
         <div>
-          <input type="radio" name="objetivo" value="emagrecer" >
+          <input type="radio" name="objetivo" value="emagrecer" required>
           <label for="emagrecer">Emagrecer</label>
         </div>
         <div>
-          <input type="radio" name="objetivo" value="hipertrofia" >
+          <input type="radio" name="objetivo" value="hipertrofia" required>
           <label for="hipertrofia">Hipertrofia</label>
         </div>
       </div>
