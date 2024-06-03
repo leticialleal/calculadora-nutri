@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora</title>
+  <title>OnNutri</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="voltar">Calculadora</h1>
+  <h1>OnNutri</h1>
   <form onsubmit="calcular(event)">
     <div class="form">
-      <input type="text" placeholder="Nome" name="nome" required>
+      <!-- <input type="text" placeholder="Nome" name="nome" required> -->
       <input type="number" placeholder="Idade" name="idade" required>
       <input type="number" placeholder="Peso em kg" name="peso" required>
       <input type="number" placeholder="Altura em cm" name="altura" required>
@@ -54,11 +54,51 @@
         </div>
       </div>
 
+      <div>
+        <strong>Restrições alimentares</strong>
+        <div>
+          <input type="checkbox" name="vegetariano" value="vegetariano" id="">
+          <label for="vegetariano">Dieta vegetariana</label>
+        </div>
+        <div>
+          <input type="checkbox" name="vegano" value="vegano" id="a">
+          <label for="vegetariano">Dieta vegana</label>
+        </div>
+        <div>
+          <input type="checkbox" name="lactose" value="lactose" id="">
+          <label for="vegetariano">Intolerância à lactose</label>
+        </div>
+        <div>
+          <input type="checkbox" name="gluten" value="gluten" id="">
+          <label for="vegetariano">Intolerância à glúten</label>
+        </div>
+      </div>
       <button>CALCULAR</button>
     </div>
   </form>
-  
+
   <div class="results"></div>
+  
+  <div class="tabela-normal remover">
+      <strong>Tabela</strong>
+  </div>
+
+  <div class="tabela-vegetariano remover">
+    <strong>Tabela vegetariana</strong>
+  </div>
+
+  <div class="tabela-vegano remover">
+    <strong>Tabela vegana</strong>
+  </div>
+
+  <div class="tabela-lactose remover">
+    <strong>Tabela intolerante à lactose</strong>
+  </div>
+
+  <div class="tabela-gluten remover">
+    <strong>Tabela intolerante à glúten</strong>
+  </div>
+  
   <button class="btn-calc-nov">Calcular novamente</button>
   <script src="index.js"></script>
 </body>
